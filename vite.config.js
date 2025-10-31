@@ -3,11 +3,12 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
- defineConfig({
-  plugins: [react()],
-});
+//  defineConfig({
+//   plugins: [react()],
+// });
 
 export default defineConfig({
+   base: '/AIEcon-Gulf/',
   plugins: [
     tailwindcss(),
   ],

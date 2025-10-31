@@ -8,7 +8,7 @@ import tailwindcss from '@tailwindcss/vite'
 // });
 
 export default defineConfig({
-   base: '/AIEcon-Gulf/',
+  //  base: '/AIEcon-Gulf/',
   plugins: [
     tailwindcss(),
   ],

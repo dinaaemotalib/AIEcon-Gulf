@@ -3,13 +3,13 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
-//  defineConfig({
-//   plugins: [react()],
-// });
-
 export default defineConfig({
-  //  base: '/AIEcon-Gulf/',
   plugins: [
-    tailwindcss(),
+    react(),        // ✅ you forgot this earlier
+    tailwindcss(),  // ✅ keep Tailwind working
   ],
-});
+  base: './',       // ✅ ensures correct paths for Hostinger
+  build: {
+    outDir: 'dist', // ✅ output folder for build
+  },
+})

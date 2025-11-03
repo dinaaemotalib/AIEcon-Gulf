@@ -15,6 +15,10 @@ import project14 from "../assets/images/Project/King Abdul Aziz Port.png";
 import project15 from "../assets/images/Project/AR RASS Project.png";
 import project16 from "../assets/images/Project/AL-Kahfah Project.jpg";
 import project17 from "../assets/images/Project/Coffee Processing factory Project.png";
+import testimonial1 from "../assets/images/Testimonials/20231126102442!شعار_وزارة_البيئة_والمياه_والزراعة.jpg";
+import testimonial2 from "../assets/images/Testimonials/alishar.jfif";
+import testimonial3 from "../assets/images/Testimonials/canpany-logos-08-2.webp";
+
 export const projectsData = [
   {
     id: 1,
@@ -188,17 +192,29 @@ export const projectsData = [
   },
 ];
 
-export const aboutImage = [
+export const testimonialsData = [
   {
     id: 1,
-    image: "/about-image.png",
-  },
-  {
+    logo: testimonial1,
+    name: "John Doe",
+    position: "CEO, Example Corp",
+    testimonial:    
+        "AIEcon Gulf provided exceptional service and expertise. Their team was professional, knowledgeable, and delivered results that exceeded our expectations.",
+    },
+    {   
     id: 2,
-    image: "/about-image-2.png",
-  },
-  {
+    logo: testimonial2,
+    name: "Jane Smith",
+    position: "Project Manager, Sample Ltd",
+    testimonial:
+        "Working with AIEcon Gulf was a fantastic experience. They were responsive, detail-oriented, and truly cared about the success of our project.",
+    },
+    {  
     id: 3,
-    image: "/about-image-3.png",
-  },
+    logo: testimonial3,
+    name: "Michael Johnson",
+    position: "Director, Demo Inc",
+    testimonial:
+        "I highly recommend AIEcon Gulf for any engineering consulting needs. Their innovative solutions and commitment to quality made a significant difference in our operations.",
+    },
 ];

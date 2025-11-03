@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { projectsData } from '../assets/data'
+import { motion } from 'framer-motion'
 
 export default function Project() {
  const [currentIndex, setCurrentIndex] = useState(0)
@@ -32,7 +33,13 @@ export default function Project() {
     }
   }
   return (
-    <div className='container mx-auto py-4 pt-20 px-6 md:px-20 lg:px-32 my-20 w-full overflow-hidden' id='Projects'>
+    <motion.div 
+      initial={{opacity:0, x:-200}}
+      animate={{opacity:1, y:0}}
+      transition={{duration:1}}
+      whileInView={{opacity:1, x:0}}
+      viewport={{once:true}}
+    className='container mx-auto py-4 pt-20 px-6 md:px-20 lg:px-32 my-20 w-full overflow-hidden' id='Projects'>
         <h1 className='text-2xl sm:text-4xl font-bold mb-2 text-center'>Projects <span className='text-primary underline underline-offset-4 decoration-1 under font-light'>Completed</span></h1>
         <p className='text-center text-gray-500 mb-8 max-w-80 mx-auto'>We have successfully completed numerous projects across various industries, delivering innovative solutions that drive results.</p>
 
@@ -75,13 +82,13 @@ export default function Project() {
                         <div className='absolute bottom-5 left-0 right-0 flex justify-center '>
                             <div className='inline-block bg-white w-3/4 px-4 py-2 shadow-md'>
                             <h2 className='text-xl font-semibold text-gray-800'>{project.title}</h2>
-                            <p className='text-gray-500 text-sm'>{project.Location} <span>|</span> {project.Client}</p>
+                            <p className='text-gray-500 text-sm'>{project.Location} <span className='px-1'>|</span> {project.Client}</p>
                             </div>
                         </div>
                     </div>
                 ))}
             </div>
         </div>
-    </div>
+    </motion.div>
   )
 }

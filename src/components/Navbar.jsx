@@ -27,7 +27,7 @@ export default function Navbar() {
           <a href="#Projects" className="cursor-pointer hover:text-gray-800">
             Projects
           </a>
-          <a href="#Clients" className="cursor-pointer hover:text-gray-800">
+          <a href="#Testimonials" className="cursor-pointer hover:text-gray-800">
             Clients
           </a>
         </ul>

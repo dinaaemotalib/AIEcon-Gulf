@@ -1,9 +1,17 @@
 import React from 'react'
 import about from "../assets/images/about.png";
+import {motion} from 'framer-motion';
+
 
 export default function About() {
   return (
-    <div className='flex flex-col items-center justify-center container mx-auto p-14 md:px-20 lg:px-32 w-full overflow-hidden' id='About-Us'>
+    <motion.div 
+      initial={{opacity:0, x:200}}
+      animate={{opacity:1, y:0}}
+      transition={{duration:1}}
+      whileInView={{opacity:1, x:0}}
+      viewport={{once:true}}
+    className='flex flex-col items-center justify-center container mx-auto p-14 md:px-20 lg:px-32 w-full overflow-hidden' id='About-Us'>
       <h1 className='text-4xl font-bold mb-4'>About <span className='text-primary underline underline-offset-4 decoration-1 under font-light'>Us</span></h1>
       <p className='text-gray-600 max-w-80 mb-8 text-lg text-center'>
         Passionate about making a difference in the world through technology and innovation.
@@ -61,6 +69,6 @@ export default function About() {
             </div>
         </div>
 
-    </div>
+    </motion.div>
   )
 }

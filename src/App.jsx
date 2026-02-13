@@ -3,7 +3,7 @@ import Navbar from '../src/components/Navbar.jsx';
 import Header from '../src/components/Header.jsx';
 import About from '../src/components/About.jsx';
 import Project from './components/Project.jsx';
-import Testimonials from './components/Testimonials.jsx';
+// import Testimonials from './components/Testimonials.jsx';
 import Contact from './components/Contact.jsx';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -17,7 +17,7 @@ function App() {
       <Header />
       <About />
       <Project />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <Contact />
       <Footer />
     </div>
